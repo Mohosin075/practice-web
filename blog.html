@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,200;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header class="sub-header">
+        <div class="container">
+        <div class="menu">
+        <div class="logo">
+            <a href=""><img src="images/logo.png" alt="World Biggest site logo"></a>
+        </div>
+        <nav class="nav-links" id="nav-links">
+            <i onclick="hideMenu()" class="fa-solid fa-xmark close icon"></i>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="course.html">course</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            
+        </nav>
+        <i onclick="showMenu()" class="fa-solid fa-bars icon"></i>
+        </div>
+        <div class="text">
+            <h1>Our Cirtificate & Online Programme  for 2022</h1>
+        </div>
+    </div>
+    </header>
+
+    
+    <section class="blog-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 blog-left">
+                    <img src="images/certificate.jpg" alt="">
+                    <h2>Our Cirtificate & Online  for 2022</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto expedita soluta distinctio quaerat accusamus aliquam consequuntur dolorem libero voluptas aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae reprehenderit ea dolor corrupti veniam aspernatur eius aliquid modi minima!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, ullam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab sunt ut excepturi quas aut at? Doloremque ipsum rerum provident vero?</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quasi quod beatae ratione libero ipsa illum, nulla earum. Explicabo vel esse quis, quos ipsa fugiat.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam nisi fuga error, itaque omnis recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorum ipsam totam aliquam? Incidunt aperiam provident vero eum quis nesciunt facilis porro iusto inventore, delectus dicta, sint, nam doloribus sed.</p>
+                </div>
+                <div class="col blog-right">
+                    <h3>Post Catagories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>25</span>
+                    </div>
+                    <div>
+                        <span>Conputer Science</span>
+                        <span>18</span>
+                    </div>
+                    <div>
+                        <span>AutoCad</span>
+                        <span>38</span>
+                    </div>
+                    <div>
+                        <span>Commers</span>
+                        <span>25</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment-box">
+                <h3>Leave Comments</h3>
+                <div class="comment-form">
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Enter your name: ">
+                        <input type="email" name="" id="" placeholder="Enter your email: : ">
+                        <textarea name=""rows="5"></textarea>
+                        <button type="submit" class="comment-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, necessitatibus, alias porro dignissimos cumque at deserunt labore aut quia debitis ullam perferendis. Quibusdam, quae hic.</p>
+            <div class="social-link">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a class="gmail" href="">mohosinali075@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        var nav_links = document.getElementById('nav-links')
+
+       function hideMenu(){
+            nav_links.style.right = '-300px'
+       }
+       function showMenu(){
+            nav_links.style.right='0';
+       }
+
+    </script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

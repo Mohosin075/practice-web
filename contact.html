@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,200;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header class="sub-header">
+        <div class="container">
+        <div class="menu">
+        <div class="logo">
+            <a href=""><img src="images/logo.png" alt="World Biggest site logo"></a>
+        </div>
+        <nav class="nav-links" id="nav-links">
+            <i onclick="hideMenu()" class="fa-solid fa-xmark close icon"></i>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="course.html">course</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            
+        </nav>
+        <i onclick="showMenu()" class="fa-solid fa-bars icon"></i>
+        </div>
+        <div class="text">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+    </header>
+
+    <div class="contact-us">
+        <div class="container">
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722105.874109386!2d89.57886686484397!3d24.351054909587287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2z4Kas4Ka-4KaC4Kay4Ka-4Kam4KeH4Ka2!5e0!3m2!1sbn!2sbd!4v1655279424176!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-page">
+                <div class="row">
+                    <div class="col contact-location">
+                        <div>
+                            <i class="fa-solid fa-house icon"></i>
+                            <span>
+                                <h4>XYZ-420-501</h4>
+                                <p>RANGPUR , DINAJPUR</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone icon"></i>
+                            <span>
+                                <h4>01765439853</h4>
+                                <p>Monday to Thursday , 10am to 4pm</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope icon"></i>
+                            <span>
+                                <h4>mohosinali075@gmail.com</h4>
+                                <p>Email us your Query</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col contact-form">
+                        <form action="">
+                            <input type="text" name="" id="" placeholder="Enter your name : " required>
+                            <input type="email" name="" id="" placeholder="Enter your email : " required
+                            >
+                            <input type="text" name="" id="" placeholder="Enter your subject : " required>
+                            <textarea name="" id="" cols="" rows="5" placeholder="message"></textarea>
+                            <button class="comment-btn" type="submit">sent message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, necessitatibus, alias porro dignissimos cumque at deserunt labore aut quia debitis ullam perferendis. Quibusdam, quae hic.</p>
+            <div class="social-link">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a class="gmail" href="">mohosinali075@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        var nav_links = document.getElementById('nav-links')
+
+       function hideMenu(){
+            nav_links.style.right = '-300px'
+       }
+       function showMenu(){
+            nav_links.style.right='0';
+       }
+
+    </script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,667 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    background-image: linear-gradient(rgba(4,9,30, 0.7),rgba(4,9,30, 0.3)), url(images/banner.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.logo img{
+    width: 150px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 10px;
+}
+nav ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: brown;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+nav ul li:hover::after{
+    width: 80%;
+}
+.header .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    width: 90%;
+}
+.header .text h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.header .text p{
+    font-size: 15px;
+    font-weight: 250;
+}
+.header .text a{
+    padding: 7px 15px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    transition: 1s;
+    position: relative;
+}
+.header .text a:hover{
+    background: brown;
+    border: 1px solid brown;
+}
+.menu .icon{
+    display: none;
+}
+
+
+
+
+/*== courses==*/
+
+.course{
+     padding-top: 70px;
+     display: block;
+     text-align: center;
+}
+.course h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.course p{
+    color: rgb(161, 156, 150);
+    font-size: 12px;
+    font-weight: normal;
+    text-align: justify;
+}
+.course .course-item{
+    background-color: bisque;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.course h3{
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/*== college campus == */
+
+
+.college-campus{
+    padding-top: 70px;
+    display: block;
+    text-align: center;
+}
+.college-campus h2{
+   font-size: 30px;
+   font-weight: 500;
+}
+.college-campus p{
+   color: rgb(161, 156, 150);
+   font-size: 12px;
+   font-weight: normal;
+   margin-bottom: 2rem;
+   display: block;
+}
+.campus-item{
+    margin: 0 20px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.campus-item img{
+    min-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.layer:hover{
+    background: rgba(243, 0, 0, .6);
+}
+.layer h2{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0;
+}
+
+.layer:hover h2{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*== our facilities==*/
+
+
+
+
+.our-facilities{
+    padding-top: 70px;
+    display: block;
+    text-align: center;
+}
+.our-facilities h2{
+   font-size: 30px;
+   font-weight: 500;
+}
+.our-facilities p{
+   color: rgb(161, 156, 150);
+   font-size: 12px;
+   font-weight: normal;
+   margin-bottom: 2rem;
+}
+
+.facilities-item{
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+.facilities-item img{
+    width: 100%;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    margin: auto;
+}
+.facilities-item h3{
+    font-size: 18px;
+    padding: 15px 0;
+    font-weight: 600;
+}
+
+.facilities-item p{
+    margin-bottom: 0;
+ }
+
+
+/*== student-says ==*/
+
+
+.student-says{
+    padding-top: 70px;
+    display: block;
+    text-align: center;
+}
+.student-says h2{
+   font-size: 30px;
+   font-weight: 500;
+}
+.student-says p{
+   color: rgb(161, 156, 150);
+   font-size: 12px;
+   font-weight: normal;
+   margin-bottom: 2rem;
+}
+.student-item img{
+    width: 60%;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+ .student-item{
+    background-color: bisque;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+.student-item h3{
+    font-size: 16px;
+    padding: 5px 0;
+}
+.student-item p{
+    margin-bottom: 0;
+}
+.student-item .star{
+    font-size: 14px;
+    color: red;
+}
+
+/*== contact us ==*/
+
+
+
+.contact-us{
+    padding: 70px 0;
+}
+.contact{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(4,9,30, 0.7),rgba(4,9,30, 0.7)), url(images/banner2.jpg);
+    background-position: left top;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+.contact-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    width: 90%;
+}
+
+.contact-text h2{
+    font-weight: 450;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.contact-text a{
+    padding: 7px 15px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    transition: 1s;
+    position: relative;
+}
+.contact-text a:hover{
+    background: brown;
+    border: 1px solid brown;
+    color: #ffffff;
+}
+
+
+.about-us{
+    padding: 50px 0;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.about-us h2{
+    font-size: 20px;
+    font-weight: 400;
+ }
+ .about-us p{
+    color: rgb(161, 156, 150);
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+    text-align: justify;
+ }
+ .social-link a{
+    font-size: 18px;
+    color: brown;
+    margin: 0 7px;
+    text-align: center;
+ }
+
+ .gmail{
+    text-decoration: none;
+    color: #000;
+    margin-top: 10px;
+    display: block;
+ }
+
+
+
+ /*== about us page ==*/
+
+
+ .sub-header{
+    width: 100%;
+    height: 50vh;
+    background-image:linear-gradient(rgba(4,9,30, 0.7),rgba(4,9,30, 0.3)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+ 
+.sub-header .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    margin-top: 60px;
+}
+.sub-header .text h1{
+    font-weight: 500;
+    font-size: 40px;
+}
+.main-about{
+    padding: 70px 0;
+}
+.about-left h2{
+    font-size: 35px;
+}
+.about-left p{
+    color: rgb(161, 156, 150);
+    font-size: 12px;
+    text-align: justify;
+}
+.about-right{
+    height: 300px;
+}
+.about-right img{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+
+.about-left a{
+    padding: 7px 15px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    background: brown;
+    transition: .5s;
+    margin: 25px 0;
+    display: inline-block;
+}
+.about-left a:hover{
+    background: rgb(230, 24, 24);
+    border: 1px solid brown;
+    color: #ffffff;
+}
+
+ /*== blog content ==*/
+
+.blog-content{
+    padding: 60px 0;
+}
+.blog-left img{
+    width: 100%;
+}
+.blog-left h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.blog-left p{
+    color: rgb(161, 156, 150);
+    font-size: 12px;
+    text-align: justify;
+}
+.blog-right h3{
+    padding: 10px 10px;
+    background-color: brown;
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+.blog-right div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-right span{
+    font-size: 14px;
+    color: #555;
+    padding: 5px 0;
+}
+
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.comment-btn{
+    padding: 7px 15px;
+    border: 1px solid brown;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    transition: .5s;
+    position: relative;
+}
+.comment-btn:hover{
+    background: brown;
+    border: 1px solid brown;
+    color: white;
+}
+.location iframe{
+    width: 100%;
+}
+
+.contact-page{
+    margin-top: 40px;
+}
+.contact-location div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-location .icon{
+    margin-right: 15px;
+    color: #f44336;
+}
+.contact-location h4{
+    font-size: 14px;
+}
+.contact-location p{
+    font-size: 12px;
+    color: rgb(161, 156, 150);
+}
+
+
+.contact-form{
+    padding: 10px 20px;
+}
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+
+
+@media (max-width: 700px)  {
+    nav ul{
+        display: block;
+    }
+    .header .text h1{
+        font-size: 20px;
+    }
+    .nav-links{
+        background: #be0303;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 200px;
+        right: -250px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    
+.logo img{
+    width: 100px;
+}
+    
+.menu .icon{
+    display: block;
+    font-size: 22px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.close{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.nav-links ul{
+    padding: 30px;
+}
+nav ul a{
+    margin: 10px;
+    display: block;
+}
+.header{
+    padding: 20px;
+}
+
+
+.college-campus h2{
+    font-size: 20px;
+}
+.our-facilities h2{
+    font-size: 20px;
+}
+
+.facilities-item h3{
+    font-size: 15px;
+    margin-bottom: 0;
+    font-weight: 500;
+    display: block;
+}
+
+.student-says h2{
+    font-size: 20px;
+}
+
+
+.student-item{
+    padding: 10px;
+    border-radius: 5px;
+}
+.student-item h3{
+    font-size: 14px;
+}
+.student-item p{
+    font-size: 12px;
+    font-weight: 300;
+}
+.student-item .star{
+    font-size: 10px;
+}
+
+.student-item img{
+    width: 120%;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+
+.contact-text h2{
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-text a{
+    padding: 5px 10px;
+    color: #ffffff;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.gmail{
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+ }
+
+ 
+.about-us{
+    width: 90%;
+}
+
+.sub-header .text h1{
+    font-weight: 450;
+    font-size: 20px;
+    width: 100%;
+}
+
+
+.sub-header .text .head-one h1{
+    font-weight: 450;
+    font-size: 25px;
+    width: 100%;
+}
+
+
+
+.about-left h2{
+    font-size: 22px;
+}
+.about-left p{
+    color: rgb(161, 156, 150);
+    font-size: 12px;
+}
+.about-right{
+    display: none;
+}
+.main-about{
+    padding: 20px 0;
+}
+.about-us{
+    padding: 20px 0;
+}
+.blog-head-one h1{
+    font-size: 14px;
+}
+.blog-content .col-8{
+    width: 100%;
+}
+
+
+}
